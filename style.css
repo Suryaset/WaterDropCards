@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eff0f4;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 40px 60px;
+}
+
+.drops{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),25px 35px 20px rgba(0,0,0,0.05),25px 30px 30px rgba(0,0,0,0.05),inset -20px -20px 25px rgba(255,255,255,.9);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drops:hover{
+  border-radius: 50%;
+}
+
+.drops::before{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background:#fff;
+  border-radius: 50%;
+  opacity: .9;
+}
+
+.drops::after{
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background:#fff;
+  border-radius: 50%;
+  opacity: .9;
+}
+/* .drops1{ 
+  background-color:#ff0f5b;
+}
+.drops2{
+  background-color: #be01fe;
+}
+.drops3{
+  background-color: #01b4ff;
+} */
+.drops1{
+  border-radius: 59% 41% 40% 60% / 41% 43% 57% 59%; 
+}
+
+.drops2{
+  border-radius: 63% 37% 53% 47% / 41% 66% 34% 59% ;
+}
+.drops3{
+  border-radius: 26% 74% 50% 50% / 51% 50% 50% 49%; 
+}
+
+.container .drops .content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.container .drops .content h2{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #eff0f4;
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),inset -2px -5px 10px rgba(0,0,0,0.05), 15px 10px 15px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--clr);
+}
+
+.container .drops .content a{
+  position: relative;
+  padding: 10px 25px;
+  background: var(--clr);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0,0,0,0.25);
+  opacity: .75;
+  transition: .5s;
+}
+
+.container .drops .content a:hover{
+  opacity: 1;
+}
+
+.container .drops .content a::before{
+  content:'';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 5px;
+  background: rgba(255, 255, 255,.5);
+}
+
